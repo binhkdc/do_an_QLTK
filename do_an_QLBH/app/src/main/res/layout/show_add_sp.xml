@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+
+
+        <EditText
+            android:id="@+id/ed_TenSP_Add"
+            android:hint="Tên Sản Phẩm"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/product_black_24"
+            android:drawablePadding="12dp"
+            android:background="@drawable/custom_input"/>
+        <EditText
+            android:id="@+id/ed_GiaNhap_Add"
+            android:hint="Giá Nhập"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_input_24"
+            android:background="@drawable/custom_input"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:drawablePadding="12dp"
+            android:maxLength="10"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Ngày Nhập:" />
+
+            <TextView
+                android:id="@+id/tvNgayNhap_Add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="" />
+
+            <Button
+                android:id="@+id/btnChonNN_SP_Add"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:text=""
+                android:backgroundTint="@color/white"
+                app:icon="@drawable/btn_date_img"
+                app:iconSize="36dp"
+                app:iconTint="#F44336" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/ed_SLN_Add"
+            android:hint="Số Lượng Nhập"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_input_24"
+            android:background="@drawable/custom_input"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:drawablePadding="12dp"
+            android:maxLength="10"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Mã Loại: " />
+
+            <TextView
+                android:id="@+id/tvMaLoai_Add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="" />
+
+            <Button
+                android:id="@+id/btnAddLSP_SP_Add"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:text=""
+                android:backgroundTint="@color/white"
+                app:icon="@drawable/outline_add_circle_black_36"
+                app:iconSize="36dp"
+                app:iconTint="#F44336" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnSaveSP"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/Status_on"
+                android:text="Save"
+                app:icon="@drawable/outline_save_black_36"
+                app:iconTint="#FFFEFD" />
+
+        </LinearLayout>
+
+</LinearLayout>

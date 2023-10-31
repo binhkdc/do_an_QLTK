@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:background="@drawable/custom_input"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/RowImageKH_SELECT"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        app:civ_border_width="2dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="15dp"
+        app:civ_border_color="#000000"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        >
+        <TextView
+            android:id="@+id/txtRowMaKH_SELECT"
+            android:text="Mã Khách Hàng:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/txtRowTenKH_SELECT"
+            android:text="Tên Khách Hàng:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:id="@+id/txtRowGioiTinhKH_SELECT"
+            android:text="Giới Tính: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/txtRowPhoneKH_SELECT"
+            android:text="NumberPhone: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </LinearLayout>
+</LinearLayout>

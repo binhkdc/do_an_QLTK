@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:id="@+id/linear_SanPham"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:text="Mã"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvMaSP_Show"
+            android:text="..."
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/ed_TenSP_Show"
+        android:hint=" Tên Sản Phẩm"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/product_black_24"
+        android:background="@drawable/custom_input"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:drawablePadding="12dp"
+        />
+    <EditText
+        android:id="@+id/ed_GiaNhap_Show"
+        android:hint="Giá Nhập"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_baseline_input_24"
+        android:background="@drawable/custom_input"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:drawablePadding="12dp"
+        />
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Ngày Nhập:" />
+
+        <TextView
+            android:id="@+id/tvNgayNhap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btnChonNN_SP_show"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            app:icon="@drawable/btn_date_img"
+            app:iconTint="#FD483A"
+            android:text="Date"
+            android:backgroundTint="#FFFEFD"
+            />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/ed_SLN_Show"
+        android:hint="  Số Lượng Nhập"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_baseline_input_24"
+        android:background="@drawable/custom_input"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:drawablePadding="12dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Mã Loại: " />
+
+        <TextView
+            android:id="@+id/tvMaLoai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btnSuaLSP_SP_show"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="#FAFAFA"
+            android:text="Sửa"
+            app:icon="@drawable/outline_edit_black_20"
+            app:iconTint="#FD483A" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Số Lượng Đã Bán: " />
+
+        <TextView
+            android:id="@+id/tvSLB_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="0" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+
+        <Button
+            android:id="@+id/btnSuaSP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FD483A"
+            android:layout_weight="3"
+            android:layout_marginEnd="10dp"
+            app:icon="@drawable/outline_edit_black_20" />
+        <Button
+            android:id="@+id/btnXoaSP"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FD483A"
+            android:layout_marginEnd="10dp"
+            app:icon="@drawable/outline_delete_black_20" />
+
+        <Button
+            android:id="@+id/btnHuyShowSP"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FD483A"
+            app:icon="@android:drawable/btn_dialog" />
+    </LinearLayout>
+</LinearLayout>

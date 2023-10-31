@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_nen"
+    android:orientation="vertical">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/img_inf4"
+        app:civ_border_width="1dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:civ_border_color="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/tvName_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+
+        android:textColor="@color/white"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:text="Lê Đăng Bình"
+        />
+
+    <TextView
+        android:id="@+id/tvVaiTro_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="1dp"
+        android:text="Vai Trò: Admin"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:textColor="@color/white" />
+    <TextView
+        android:textSize="10dp"
+        android:id="@+id/tvDoanhThu_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:text="Doanh Thu: "
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

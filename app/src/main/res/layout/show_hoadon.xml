@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_hoadon"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/shape"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Mã Hoá Đơn: "
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvMAHD_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="..."
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginRight="20dp"
+            android:text="Mã KH: "
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvHD_MAKH_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginRight="20dp"
+            android:text="..."
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Tên Khách Hàng: "
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvHD_TENKH_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="..."
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginRight="20dp"
+            android:text="Mã SP: "
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvHD_MASP_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginRight="20dp"
+            android:text="..."
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Tên Sản Phẩm: "
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvHD_TENSP_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="..." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Ngày Mua: "
+            android:layout_weight="3"/>
+        <TextView
+            android:id="@+id/tvHD_NGAYMUA_show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5" />
+
+        <Button
+            android:id="@+id/btnChonNM_HD_show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            app:icon="@drawable/btn_date_img"
+            app:iconTint="#F44336"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Tổng Tiền: "
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvHD_TONGTIEN_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="0"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="VNĐ"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10">
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="5"
+            android:weightSum="12">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Trạng Thái: "
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tvHD_TRANGTHAI_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Chưa Thanh Toán" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnTrueTT_HD"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:backgroundTint="#FFFFFF"
+                app:icon="@drawable/outline_price_check_black_36"
+                app:iconPadding="0dp"
+                app:iconSize="36dp"
+                app:iconTint="#F44336" />
+
+            <Button
+                android:id="@+id/btnFalseTT_HD"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:backgroundTint="#FFFFFF"
+                app:icon="@drawable/outline_price_check_black_36_"
+                app:iconPadding="0dp"
+                app:iconSize="36dp"
+                app:iconTint="#F44336" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <Button
+            android:id="@+id/btnSuaHD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="3"
+            android:backgroundTint="#FD483A"
+            android:textSize="10dp"
+            app:icon="@drawable/outline_edit_black_20"
+            app:iconTint="#FFFEFD" />
+
+        <Button
+            android:id="@+id/btnXoaHD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="3"
+            android:backgroundTint="#FD483A"
+            android:textSize="10dp"
+            app:icon="@drawable/outline_delete_black_20"
+            app:iconTint="#FFFEFD" />
+
+        <Button
+            android:id="@+id/btnHuyShowHD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="3"
+            android:backgroundTint="#FD483A"
+            android:textSize="10dp"
+            app:icon="@android:drawable/btn_dialog"
+            app:iconTint="#FFFEFD" />
+    </LinearLayout>
+</LinearLayout>
